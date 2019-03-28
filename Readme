@@ -1,0 +1,9 @@
+Indexes sped up the operations.
+
+For the first query: 
+Time taken without indexes: 29.912s
+Time taken with indexes: 14.464s
+
+For the second query:
+Time taken without indexes: 0.247s
+Time taken with indexes: 0.070s
