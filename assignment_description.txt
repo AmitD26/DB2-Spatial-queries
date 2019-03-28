@@ -1,7 +1,7 @@
 Homework3: Spatial Queries
 Please go through DB2 Spatial Tutorial (I (http://www.google.com/url?q=http%3A%2F%2Fwww.ibm.com%2Fdeveloperworks%2Fdata%2Ftutorials%2Fdm-1202db2spatialdata1%2Findex.html&sa=D&sntz=1&usg=AFQjCNFk5bII6k0SydFFu1x0s_8oSeXRFw), II (http://www.google.com/url?q=http%3A%2F%2Fwww.ibm.com%2Fdeveloperworks%2Fdata%2Ftutorials%2Fdm-1212db2spatialdata2%2Findex.html&sa=D&sntz=1&usg=AFQjCNFGQR-qX-dqhvQQSMTHxgfiI6Q6jA) ) before you begin this homework. 
 Please also read spatial query examples.
-DB2 Spatial Online Reference (V11.1) PDF Version
+DB2 Spatial Online Reference (V11.1) PDF Version (ftp://ftp.software.ibm.com/ps/products/db2/info/vr105/pdf/en_US/DB2Spatial-db2sbe1050.pdf)
 
 
 In this homework, you will load two spatial datasets into a spatial database (DB2 Spatial Extender) and perform two queries.
