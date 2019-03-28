@@ -35,15 +35,20 @@ If the query is quite slow, one trick to optimize the query is to give a hint on
 SELECT ...
 FROM   <user_table>
 WHERE  ST_Intersects(<indexed_shape_column>, ...) = 1 SELECTIVITY 0.00001;
-(More examples on using selectivity for query hint can be found here.)
+(More examples on using selectivity for query hint can be found here (https://docs-iias.mybluemix.net/docs/content/SS6NHC/com.ibm.swg.im.dashdb.analytics.doc/doc/analyze_geospatial_data_3.html).)
 For the indexes created for the two tables, please try SELECTIVITY as 0.0002. If this doesn't work well, adjust it by yourself. 
 
 2. Write a query to find the nearest starbucks store to Stony Brook University and verify your answer. 
-The longitude and latitude location of Stony Brook University is (-73.1233890, 40.9123760). You can find the geolocation of an address here. Nearest neighbor search is not directed supported by DB2. You can use ST_BUFFER to create a buffered area (polygon/circle) from a point within a certain distance and search only stores within the buffer. Note that 0.25 degree is roughly 10 miles. For all the datasets, we use spatial reference nad83_srs_1 with srs ID as 1. 
+The longitude and latitude location of Stony Brook University is (-73.1233890, 40.9123760). You can find the geolocation of an address here (https://www.latlong.net/). Nearest neighbor search is not directed supported by DB2. You can use ST_BUFFER to create a buffered area (polygon/circle) from a point within a certain distance and search only stores within the buffer. Note that 0.25 degree is roughly 10 miles. For all the datasets, we use spatial reference nad83_srs_1 with srs ID as 1. 
 
-You can find information here on functions such as ST_POINT, ST_BUFFER, ST_WITHIN or ST_CONTAINS, and ST_DISTANCE. 
+You can find information here (https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.1.0/com.ibm.db2.luw.spatial.topics.doc/doc/db2sb169.html) on functions such as ST_POINT, ST_BUFFER, ST_WITHIN or ST_CONTAINS, and ST_DISTANCE. 
 
 Please return location and distance in your result. You can use unit 'KILOMETER', 'METER', or 'STATUTE MILE' for distance measurement.
 
 3. Drop all indexes and perform the two queries again, and compare the query performance. (You don't need to turn in your result but discuss your difference of querying time with and without indexes in your README file). 
 
+Homework Submission
+
+Please zip your SQL scripts, results, and a README file. A result can be a text file or a screenshot.  
+
+Please go to blackboard, and submit it under homework 3.
