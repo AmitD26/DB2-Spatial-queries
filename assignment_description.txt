@@ -6,8 +6,8 @@ DB2 Spatial Online Reference (V11.1) PDF Version (ftp://ftp.software.ibm.com/ps/
 
 In this homework, you will load two spatial datasets into a spatial database (DB2 Spatial Extender) and perform two queries.
 
-The first dataset is from TIGER dataset provided by US Census Bureau. We will download the US counties in shapefile format. A local copy of the shapefile is also available here.
-Once you unzip the file, you can run the following command under db2 command line to find metadata for the format. (Documentation of the dataset can be found here.)
+The first dataset is from TIGER dataset provided by US Census Bureau. We will download the US counties in shapefile format.
+Once you unzip the file, you can run the following command under db2 command line to find metadata for the format. (Documentation of the dataset can be found here (http://www.google.com/url?q=http%3A%2F%2Fwww2.census.gov%2Fgeo%2Fpdfs%2Fmaps-data%2Fdata%2Ftiger%2Ftgrshp2015%2FTGRSHP2015_TechDoc_Ch3.pdf&sa=D&sntz=1&usg=AFQjCNGdBbHvxj0fzhFRtLpAe1IG880sFg).)
 db2se shape_info -fileName tl_2015_us_county.shp
 
 The shapefile has a multipolygon object to represent the boundary of each county. 
